@@ -23,8 +23,8 @@ Within Visual Studio Code we use a set of extensions where some are **required**
 
 * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
   * Helps maintain consistent coding styles for multiple developers working on the same project across various editors and IDEs.
-* [TSLint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin)
-  * TSLint is an extensible static analysis tool that checks TypeScript code for readability, maintainability, and functionality errors.
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  * ESLint is an extensible static analysis tool that checks (TypeScript) code for readability, maintainability, and functionality errors.
 * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   * Prettier is a code formatter that enforces a consistent code style.
 * [Vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
@@ -50,7 +50,8 @@ Within Visual Studio Code we use a set of extensions where some are **required**
     * XML Formatting, XQuery, and XPath Tools
 * [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
   * Provides comprehensive YAML Language support.
-
+* [Sitecore Scriban Extension](https://marketplace.visualstudio.com/items?itemName=adamnaj.sitecore-scriban&utm_source=VSCode.pro&utm_campaign=AhmadAwais)
+  * This extension allows to colorize Sitecore Experience Accelerator Scriban-Html scripts following the syntax of the scriban templating language with SXA extensions.
 ## Configuration & project setup
 
 So how do we keep our way of work regarding projects consistent? We use a bunch of *configuration files*, *linters* and best practices regarding *folder structures*, *coding* and *testing*.
