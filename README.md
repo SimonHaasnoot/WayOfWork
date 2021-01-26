@@ -58,6 +58,7 @@ So how do we keep our way of work regarding projects consistent? We use a bunch 
 The project configuration may vary based on the *type* of project:
 
 * `React`
+
     Practices:
   * Atomic design
   * Block Element Modifier (BEM)
@@ -86,14 +87,23 @@ First, a bit of theory about the aspects of quality code. How can we achieve qua
 Quality code consists out of the following 5 aspects:
 
 **1. Reliability**
+
     Reliability measures the probability that a system will run without failure over a specific period of operation. It relates to the number of defects and availability of the software.
+
 **2. Maintainability**
+
     Maintainability measures how easily software can be maintained. It relates to the size, consistency, structure, and complexity of the codebase. And ensuring maintainable source code relies on a number of factors, such as testability and understandability.
+
 **3. Testability**
+
     Testability measures how well the software supports testing efforts. It relies on how well you can control, observe, isolate, and automate testing, among other factors.
+
 **4. Portability**
+
     Portability measures how usable the same software is in different environments. It relates to platform independency.
+
 **5. Reusability**
+
     Reusability measures whether existing assets — such as code — can be used again. Assets are more easily reused if they have characteristics such as modularity or loose coupling.
 
 To translate the theory above to a **practical** approach; functions should, in almost all cases, live up to the following expectations:
@@ -104,4 +114,3 @@ To translate the theory above to a **practical** approach; functions should, in 
 * Should always do one thing
 * Indent level should not be greater than 2
 * maximum number of arguments at around 3
-

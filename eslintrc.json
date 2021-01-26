@@ -1,0 +1,158 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:prettier/recommended",
+    "prettier/react"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "settings": {
+    //Change max line lenght, also change this in prettier config
+    "max-len": ["error", { "code": 150 }],
+    //Fix for airbnb not supporting typescript
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".ts",
+          ".jsx",
+          ".tsx",
+          ".json"
+        ]
+      }
+    },
+    //Fix for airbnb not supporting typescript
+    "import/extensions": [
+      ".js",
+      ".ts",
+      ".jsx",
+      ".tsx"
+    ]
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "demo/stories/**",
+          "**/*.stories.tsx",
+          "**/*.test.tsx"
+        ]
+      }
+    ],
+    //Fix use typescript variant of core rules
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": [
+      "error",
+      {
+        "functions": false,
+        "classes": true,
+        "variables": true
+      } //Allow function hoisting
+    ],
+    "no-unused-vars": "off",
+    "no-shadow": "off",
+    "no-undef": "off",
+    //Fix for airbnb not supporting typescript
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [
+          ".jsx",
+          ".tsx"
+        ]
+      }
+    ],
+    //Fix for airbnb not supporting typescript
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "ts": "never",
+        "jsx": "never",
+        "tsx": "never"
+      }
+    ],
+    //Allow return statements if enclosed in parentheses
+    "no-return-assign": [
+      "error",
+      "except-parens"
+    ],
+    //Allow conditional assignment if enclosed in parentheses
+    "no-cond-assign": [
+      "error",
+      "except-parens"
+    ],
+    //Off until optional chaning is supported https://github.com/eslint/eslint/issues/12822
+    "no-unused-expressions": [
+      "off",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true
+      }
+    ],
+    //Allow ++ in for loops
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "import/no-unresolved": [
+      "error",
+      {
+        "caseSensitive": false
+      }
+    ],
+    "array-callback-return": [
+      "error",
+      {
+        "allowImplicit": true
+      }
+    ],
+    //FIX LATER
+    "consistent-return": "off",
+    "import/no-cycle": "off",
+    "no-param-reassign": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react/no-danger": "off",
+    "react/no-array-index-key": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/destructuring-assignment": "off",
+    "react/prop-types": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react/require-default-props": "off",
+    "jsx-a11y/tabindex-no-positive": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/alt-text": "off",
+    "jsx-a11y/interactive-supports-focus": "off",
+    "jsx-a11y/no-access-key": "off",
+    "jsx-a11y/iframe-has-title": "off"
+  }
+}
