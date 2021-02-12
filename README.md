@@ -4,6 +4,7 @@
 
 At Macaw we standardized our way of working where we strive for code quality, readability and quick project onboarding. This document will help you, the awesome Macaw employee, get up to speed and teach you in understanding our **way of work**.
 
+More info can also be found in our repo [FE WoW Macaw](https://macawdevops.visualstudio.com/_git/WoW-MI?path=%2Fsrc%2FFrontend).
 ## Document build-up
 
 * Editor
@@ -14,6 +15,8 @@ At Macaw we standardized our way of working where we strive for code quality, re
 ## Editor
 
 We work with [Visual Studio Code](https://code.visualstudio.com/). It is possible to use a different editor, but we highly recommend using this one (some extensions might for example not be available). This will make it easier for colleagues to help out if necessary.
+
+Some projects work with different node versions, so it is also recommended to install [Node Version Manager](https://github.com/coreybutler/nvm-windows) to manage multiple installations of node.js.
 
 ## Extensions
 
@@ -61,25 +64,25 @@ The project configuration may vary based on the *type* of project:
 * `React`
 
     Practices:
-  * Atomic design
-  * Block Element Modifier (BEM)
+  * [Atomic design](https://bradfrost.com/blog/post/atomic-web-design/)
+  * [Block Element Modifier](http://getbem.com/naming/)
 
    Testing:
-  * Storybook
+  * [Storybook](https://storybook.js.org/)
   * Unittests
 
    Linting:
-  * Typescript lint config
-  * Sass lint config
+  * (type)script lint config (see `.eslintrc`)
+  * Sass lint config (see `stylelintrc.json`)
 
    Configuration:
-  * Prettier config
-  * Editorconfig
+  * Prettier config (see `.prettierrc`)
+  * Editorconfig (see `.editorconfig`)
 
    Pipeline:
   * Sonarqube
 
-* `Other`
+* `Other (Sitecore)`
 
 ## Code principles
 
