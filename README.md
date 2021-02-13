@@ -65,15 +65,18 @@ The project configuration may vary based on the *type* of project:
 
     Practices:
   * [Atomic design](https://bradfrost.com/blog/post/atomic-web-design/)
+  ![Atomic design folder structure example](examples/atomic-design.png)
+  * Grouped folder structure
+  ![Grouped folder structure](examples/grouped.png)
   * [Block Element Modifier](http://getbem.com/naming/)
 
    Testing:
   * [Storybook](https://storybook.js.org/)
-  * Unittests
+  * [Jest](https://jestjs.io/)
 
    Linting:
   * (type)script lint config (see `.eslintrc`)
-  * Sass lint config (see `stylelintrc.json`)
+  * Sass lint config (see `stylelintrc.json`)?
 
    Configuration:
   * Prettier config (see `.prettierrc`)
@@ -81,6 +84,7 @@ The project configuration may vary based on the *type* of project:
 
    Pipeline:
   * Sonarqube
+  * lint check
 
 * `Other (Sitecore)`
 
