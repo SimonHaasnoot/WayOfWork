@@ -50,7 +50,7 @@ Within Visual Studio Code we use a set of extensions where some are **required**
 * [TodoTree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
   * This extension quickly searches your workspace for comment tags like TODO and FIXME, and displays them in a tree view in the explorer pane.
 * [XML Tools](https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml)
-    * XML Formatting, XQuery, and XPath Tools
+  * XML Formatting, XQuery, and XPath Tools
 * [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
   * Provides comprehensive YAML Language support.
 * [Sitecore Scriban Extension](https://marketplace.visualstudio.com/items?itemName=adamnaj.sitecore-scriban&utm_source=VSCode.pro&utm_campaign=AhmadAwais)
@@ -65,9 +65,11 @@ The project configuration may vary based on the *type* of project:
 
     Practices:
   * [Atomic design](https://bradfrost.com/blog/post/atomic-web-design/)
-  ![Atomic design folder structure example](examples/atomic-design.png)
+
+    <img src="examples/atomic-design.png" alt="drawing" width="200"/>
   * Grouped folder structure
-  ![Grouped folder structure](examples/grouped.png)
+
+    <img src="examples/grouped.png" alt="drawing" width="200"/>
   * [Block Element Modifier](http://getbem.com/naming/)
 
    Testing:
